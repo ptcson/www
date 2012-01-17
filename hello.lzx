@@ -1,0 +1,45 @@
+<canvas> 
+   <dataset src="rest.xml" name="dsRestaurants" request="true"/>
+
+   <window name="main" title="Restaurants in S.F." width="200" 
+        height="250" resizable="true">
+
+     <view>
+        <text onmouseover="this.setBGColor(0xBBBBFF)"
+            onmouseout="this.setBGColor(null)">
+           <datapath xpath="dsRestaurants:/abc/restaurant/@name"
+                  replication="lazy" />
+
+           <handler name="onclick">
+              var details=new detailswindow(canvas);
+              details.datapath.setFromPointer(this.datapath);
+           </handler>
+        </text>
+     </view>
+     <scrollbar/>
+   </window>
+
+   <class name="detailswindow" extends="window"
+          x="${main.x +main.width}" resizable="true"
+          title="$path{'@name'}" width="400" 
+          height="250" closeable="true">
+      <datapath/>
+
+      <method name="close">
+         putAway.doStart();
+      </method>
+
+      <animatorgroup name="putAway" process="sequential" duration='1000'
+                     start="false">
+          <animator attribute="height" to="50"/>
+          <animator attribute="y" to="-50"/>
+      </animatorgroup>
+
+      <simplelayout/>
+      <text datapath="@name" fontsize="14" width="100%"
+            multiline="true"/>
+      <text datapath="@street"/>
+      <text datapath="@city"/>
+
+   </class>
+</canvas>
