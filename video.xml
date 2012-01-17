@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gdata>	
+		 <entry>
+			<id>http://gdata.youtube.com/feeds/api/videos/1LqYBfaXeyk</id>
+			<published>2011-12-19T16:30:48.000Z</published>
+			<updated>2012-01-05T05:28:42.000Z</updated>
+			<control>
+			Syndication of this video was restricted by the content owner.
+			</control>
+			  <title type='text'>Daddy Yankee - Lovumba (Behind The Scenes)</title>
+			<content type='text'>Music video by Daddy Yankee performing Daddy Yankee- Lovumba (Behind The Scenes) .</content>
+			<author>
+			  <jid>DaddyYankeeVEVO</jid>
+			  			  <jid>MomDaddyYankeeVEVO</jid>
+			  <toid>ToID</toid>
+			</author>
+			<mediagroup>
+			 Daddy Yankee - Lovumba (Behind The Scenes)
+		  </mediagroup>
+		  </entry>
+		  
+			 <entry>
+			<id>http://gdata.youtube.com/feeds/api/videos/1LqYBfaXeyk</id>
+			<published>2011-12-19T16:30:48.000Z</published>
+			<updated>2012-01-05T05:28:42.000Z</updated>
+			<control>
+			Syndication of this video was restricted by the content owner.
+			</control>
+			  <title type='text'>Daddy Yankee - Lovumba (Behind The Scenes)</title>
+			  <title> Fake </title>
+			<content type='text'>Music video by Daddy Yankee performing Daddy Yankee- Lovumba (Behind The Scenes) .</content>
+			<author>
+			  <jid>DaddyYankeeVEVO</jid>
+			  <toid>ToID</toid>
+			  <toid>2nd Toid</toid>
+			  <toid>3rd Toid</toid>
+			</author>
+			<mediagroup>
+			 Daddy Yankee - Lovumba (Behind The Scenes)
+		  </mediagroup>
+		  </entry>	  
+		  
+		  
+		  </gdata>
